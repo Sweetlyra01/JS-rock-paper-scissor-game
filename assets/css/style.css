@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Serif+Vithkuqi&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(rgb(91, 91, 133),black);
+}
+.box-design {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px 3px;
+  border-radius: 10px;
+  background-color: gray;
+}
+.gameTitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Caprasimo', cursive;
+  font-size: 60px;
+  text-shadow: 1px 3px 3px red;
+  color: rgb(84, 84, 164);
+}
+.team {
+  font-size: 40px;
+  font-family: 'Noto Serif Vithkuqi', serif;
+
+}
+.opponents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.opponent-picks {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.opponent-picks span {
+  font-size: 40px;
+  font-family: 'Noto Serif Vithkuqi', serif;
+}
+.player {
+  color: blue;
+  font-size: 80px;
+  border: 3px solid rgb(165, 156, 156);
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 2px 2px;
+  background-color: rgb(206, 206, 183);
+}
+.aI {
+  color: red;
+  font-size: 80px;
+  border: 3px solid rgb(165, 156, 156);
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 2px 2px;
+  background-color: rgb(206, 206, 183);
+}
+.user-choice-buttons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.user-choice-buttons button {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 40px;
+  width: 280px;
+  color: rgb(80, 167, 167);
+  border-radius: 10px;
+  background-color: bisque;
+}
+.user-choice-buttons button:hover {
+  background-color: rgb(175, 173, 171);
+  box-shadow: 2px 2px 2px black;
+}
+.result-section {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.reset-btn-sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.resetBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: gray;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.resetBtn:hover{
+  padding: 10px 30px;
+  background:  rgb(80, 167, 167);
+  border: 3px solid gray;
+}
+@media (max-width: 767px) {
+  body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+  }
+  .box-design {
+    max-width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .gameTitle {
+    font-size: 30px;
+  }
+  .team {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .opponent-picks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .opponent-picks span {
+    font-size: 20px;
+  }
+  .user-choice-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-choice-buttons button {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .result-section {
+    font-size: 30px;
+  }
+  .resetBtn{
+    font-size: 20px;
+  }
+  .player {
+    color: blue;
+    font-size: 40px;
+  }
+  .aI {
+    color: red;
+    font-size: 40px;
+  }
+}

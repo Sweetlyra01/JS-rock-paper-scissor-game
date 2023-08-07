@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/ef0a2a4efa.js" crossorigin="anonymous"></script>
+  <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+  <div class="gameTitle">
+    <span>ROCK PAPER SCISSORS GAME</span>
+  </div>
+<div class="box-design">
+  <div class="opponents">
+    <div class="team">
+      <span><i class="fa-regular fa-user fa-beat"></i>user01:</span>
+      <span id="userScore" class="score"></span>
+    </div>
+    <div class="team">
+      <span><i class="fa-solid fa-robot fa-beat"></i> ai:</span>
+      <span id="computerScore" class="score"></span> 
+    </div>
+  </div>
+    <div class="opponent-picks">
+      <div class="player">
+        <i id="userDisplayRock" class="fa-solid fa-hand-back-fist fa-rotate-90"></i>
+        <i id="userDisplayPaper" class="user-choice-display fa-solid fa-hand"></i>
+        <i id="userDisplayScissors" class="fa-solid fa-hand-scissors fa-rotate-180"></i>
+      </div>
+      <span>v/s</span>
+      <div class="aI">
+        <i id="computerDisplayRock" class="fa-solid fa-hand-back-fist fa-rotate-270"></i>
+        <i id="computerDisplayPaper" class="ai-choice-display fa-solid fa-hand"></i>
+        <i id="computerDisplayScissors" class="fa-solid fa-hand-scissors fa-flip-vertical"></i>
+      </div>
+    </div>
+    <div class="result-section">
+      <span id="result">Let's Start!</span>
+    </div>
+  <div>
+    <div class="user-choice-buttons">
+      <button id="userRock">
+        <i class="fa-solid fa-hand-back-fist ">Rock</i>
+      </button>
+      <button id="userPaper">
+        <i class="fa-solid fa-hand ">Paper</i>
+      </button>
+      <button id="userScissors">
+        <i class="fa-solid fa-hand-scissors">Scissors</i>
+      </button>
+    </div>
+    <form class="reset-btn-sec">
+      <button onclick="restartGame()" id="reset" class="resetBtn">
+        NEW GAME
+      </button>
+ 
+    </form>
+  </div>
+</div>
+  <script src="assets/script/main.js"></script>
+</body>
+</html>
+  
